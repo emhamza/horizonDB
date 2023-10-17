@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Link to ERD Diagram: https://drawsql.app/teams/micronauts/diagrams/tool-erd

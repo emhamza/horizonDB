@@ -1,5 +1,5 @@
 class QuarterlyService < ApplicationRecord
-    belongs_to :user
+  belongs_to :user
 
-    validates :name, :quarterly, :annual_total, :user_id, presence: true
+  validates :name, :quarterly, :annual_total, :user_id, presence: true
 end

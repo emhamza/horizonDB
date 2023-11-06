@@ -8,4 +8,10 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+
+  namespace :api do 
+    namespace :v1 do 
+      resources :service_types, only: [:index, :show, :create, :update, :destroy]
+    end
+  end  
 end

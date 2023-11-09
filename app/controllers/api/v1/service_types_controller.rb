@@ -1,36 +1,52 @@
 class Api::V1::ServiceTypesController < ApplicationController
   before_action :set_service_type, only: %i[show update destroy]
 
-  # GET /api/v1/service_types
+  # GET /service_types
   def index
     @service_types = ServiceType.all
+
     render json: @service_types
   end
 
-  # GET /api/v1/service_types/:id
+  # GET /service_types/1
   def show
-    render json: @service_types
+    render json: @service_type
   end
 
-  # POST /api/v1/service_types
+  # POST /service_types
   def create
-    @service_types = ServiceType.new(service_type_params)
+    @service_type = ServiceType.new(service_type_params)
 
     if @service_type.save
-      render json: @service_type, status: :created
+      render json: @service_type, status: :created, location: @service_type
     else
       render json: @service_type.errors, status: :unprocessable_entity
     end
   end
 
-  # DELETE /api/v1/service_types
+  # PATCH/PUT /service_types/1
+  def update
+    if @service_type.update(service_type_params)
+      render json: @service_type
+    else
+      render json: @service_type.errors, status: :unprocessable_entity
+    end
+  end
+
+  # DELETE /service_types/1
   def destroy
-    @service_type = ServiceType.find(params[:id])
+    @service_type.destroy
   end
 
   private
 
+  # Use callbacks to share common setup or constraints between actions.
+  def set_service_type
+    @service_type = ServiceType.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
   def service_type_params
-    params.require(:service_type).permit(:name, :category, :default_rate, :frequency, :target, :commissioned_by)
+    params.require(:service_type).permit(:name, :category, :default_rate, :frequency, :target, :user_id, :commissioned_id)
   end
 end

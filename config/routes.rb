@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  
+  resources :service_types
+  resources :commissioneds
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
   devise_for :users, path: '', path_names: {
@@ -11,17 +15,26 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  #routes for spa services
+  #routes for commissioneds
   namespace :api do
     namespace :v1 do
-      resources :spa_services, only: [:index, :show, :create, :destroy]
+      resources :commissioneds, only: [:index, :show, :create, :destroy]
     end
   end
 
-  #routes for reservations
   namespace :api do
     namespace :v1 do
-      resources :reservations, only: [:index, :show, :create, :destroy]
+      resources :service_types, only: [:index, :show, :create, :destroy]
+    end
+  end
+
+  #routes for time services
+  namespace :api do
+    namespace :v1 do
+      resources :monthly_services, only: [:index, :show, :create, :destroy]
+      resources :biannual_services, only: [:index, :show, :create, :destroy]
+      resources :yearly_services, only: [:index, :show, :create, :destroy]
+      resources :quarterly_services, only: [:index, :show, :create, :destroy]
     end
   end
 

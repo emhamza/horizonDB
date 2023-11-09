@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>The Spa Api</b></h3>
+  <h3><b>GP Data Management Tool</b></h3>
 
 </div>
 
@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 The Spa Api ](#-the-spa-api-)
+- [📖 GP Data Management Tool(FE) ](#-the-spa-api-)
   - [🛠 Link to back-end ](#-link-to-back-end-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
@@ -39,7 +39,7 @@
 
 # 📖 The Spa Api <a name="about-project"></a>
 
-**The Spa Api** is the backend rails Api for the spa app built to help individuals easily book their spa sessions.
+**GP Data management tool** is the backend rails Api for the GP Practices built to help GP managers easily manage their Practice's data.
 
 ## 🛠 Link to back-end <a name="link-frontend"></a>
 
@@ -178,7 +178,7 @@ I'm proud to be a part of a talented team with 4 members who collaborate to achi
 - Twitter: [@uhamzaz](https://twitter.com/uhamzaz)
 - LinkedIn: [Umair Hamza](https://www.linkedin.com/in/umair-hamza-a8262b261/)
 
-👤 **Harriet Oteng**
+<!-- 👤 **Harriet Oteng**
 
 - GitHub: [@githubhandle](https://github.com/newhoteng)
 - Twitter: [@twitterhandle](https://twitter.com/HarrietOteng1)
@@ -193,7 +193,7 @@ I'm proud to be a part of a talented team with 4 members who collaborate to achi
 👤 **Roland Ntwali**
 
 - GitHub: [Roland-Ntwali](https://github.com/Roland-Ntwali)
-- LinkedIn: [roland-ntwali](https://www.linkedin.com/in/roland-ntwali/)
+- LinkedIn: [roland-ntwali](https://www.linkedin.com/in/roland-ntwali/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -213,7 +213,7 @@ I'm proud to be a part of a talented team with 4 members who collaborate to achi
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/newhoteng/spa-booking-backend/issues).
+<!-- Feel free to check the [issues page](https://github.com/newhoteng/spa-booking-backend/issues). -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,7 +221,7 @@ Feel free to check the [issues page](https://github.com/newhoteng/spa-booking-ba
 
 Api Documentation for our Spa Booking app
 
-Feel free to check the [API Doc](http://127.0.0.1:3001/api-docs/index.html).
+<!-- Feel free to check the [API Doc](http://127.0.0.1:3001/api-docs/index.html). -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,9 +237,9 @@ If you like this project please give it a star ⭐️ on github
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank [Microverse](https://bit.ly/MicroverseTN).
-
-This Project design is adobted based on the Original design idea by [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign)
+<!-- We would like to thank [Microverse](https://bit.ly/MicroverseTN). -->
+<!-- 
+This Project design is adobted based on the Original design idea by [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

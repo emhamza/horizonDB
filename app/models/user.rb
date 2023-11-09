@@ -8,6 +8,7 @@ class User < ApplicationRecord
 
   has_many :reservations, foreign_key: 'user_id', dependent: :destroy
   has_many :spa_services, foreign_key: 'user_id', through: :reservations, dependent: :destroy
+  has_many :commissioneds, foreign_key: 'user_id', dependent: :destroy
 
   validates_presence_of :email
   validates :username, presence: true, uniqueness: { case_sensitive: false }
